@@ -1,0 +1,110 @@
+body{
+  font-family: 'Karla', sans-serif;
+  background-color: hsl(204, 43%, 93%);
+  text-align: center;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  top: 100px;
+}
+
+.container1{
+  grid-column: 1 / span 2;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 5%;
+}
+
+.container1 .head-text{
+  color: hsl(179, 62%, 43%);
+}
+
+.container1 .subhead-text{
+  color: hsl(71, 73%, 54%);
+}
+
+.paragraph p {
+  opacity: 70%;
+}
+
+.container2{
+  color: white;
+  background-color: hsl(179, 62%, 43%);
+  border-radius: 0 0 0 10px;
+  padding: 0 8% 10% 8%;
+}
+
+.per-month{
+  opacity: 60%;
+}
+
+.container3{
+  color: white;
+  background-color: hsl(179, 80%, 43%);
+  border-radius: 0 0 10px 0;
+  padding: 0 8% 3% 8%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li{
+  margin-top: 5px;
+}
+
+.btn {
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  -webkit-box-shadow: 0px 1px 6px hsl(218, 22%, 67%);
+  -moz-box-shadow: 0px 1px 6px hsl(218, 22%, 67%);
+  box-shadow: 0px 1px 6px hsl(218, 22%, 67%);
+  color: #ffffff;
+  font-size: 20px;
+  background: hsl(71, 73%, 54%);
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+  border: none;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: hsl(71, 50%, 54%);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 376px) {
+
+
+  .container{
+    width: 80%;
+  }
+
+  .container2{
+    border-radius: 0;
+  grid-area: 2 / 1 / 2 / span 2;
+}
+
+.container3{
+  border-radius: 0 0 10px 10px;
+grid-area: 3 / 1 / 4 / span 2;
+}
+
+.attribution{
+  position: relative;
+  top: 100px;
+}
+
+.btn{
+  width: 100%;
+}
+}
